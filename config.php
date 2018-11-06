@@ -12,7 +12,10 @@ define ( "ADMIN_PASSWORD", "password" ); //Change to custom password
 
 require( CLASS_PATH . "/Article.php" );
 
-/* Log error messages and throw up generic error message */
+/**
+ * Function handleException
+ * Log error messages and throw up generic error message
+ */
 function handleException( $exception ) {
   echo "Bummer. Something is wrong.";
   error_log( $exception->getMessage() );
